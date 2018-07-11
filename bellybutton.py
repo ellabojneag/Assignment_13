@@ -6,11 +6,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return 'ella is home'
-
-#route to render html file
-@app.route("/bellybutton")
-def bellybutton():
     return render_template('Index.html')
 
 
